@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* - Soft violet: hsl(273, 75%, 66%)
+- Soft blue: hsl(240, 73%, 65%) */
+body {
+  background: linear-gradient(
+    to bottom,
+    hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%)
+  );
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card-container {
+  width: 55rem;
+  max-height: 30rem;
+  background-color: white;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  border-radius: 1.5625rem;
+  padding: 2rem 0;
+  gap: 2rem;
+}
+
+.box {
+  width: 10rem;
+  position: absolute;
+  top: 40%;
+  left: -4.875rem;
+  z-index: 1;
+}
+
+.woman-container {
+  align-self: center;
+  overflow: hidden;
+}
+.woman {
+  width: 25rem;
+  transform: translateX(-20%);
+}
+
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+  margin-right: 3rem;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+
+.text-description {
+  margin-bottom: 1rem;
+  color: hsl(240, 6%, 50%);
+  font-size: 0.875rem;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+
+.text-description:hover {
+  cursor: pointer;
+  color: hsl(14, 88%, 65%);
+}
+.arrow-down {
+  margin-left: 5rem;
+  margin-bottom: 1rem;
+}
+.arrow-down:hover {
+  cursor: pointer;
+}
+
+.accordion-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.answer {
+  font-size: 0.75rem;
+  color: hsl(240, 6%, 50%);
+}
+.open {
+  display: none;
+}
